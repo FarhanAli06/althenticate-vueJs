@@ -1,0 +1,14 @@
+<script setup>
+const props = defineProps(['color'])
+const val =  props.color? props.color:'#21D282';
+</script>
+
+<template>
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3853 11.5H5.38525C4.28068 11.5 3.38525 12.3954 3.38525 13.5V20.5C3.38525 21.6046 4.28068 22.5 5.38525 22.5H19.3853C20.4898 22.5 21.3853 21.6046 21.3853 20.5V13.5C21.3853 12.3954 20.4898 11.5 19.3853 11.5Z" :stroke="val" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.38525 11.5V7.5C7.38525 6.17392 7.91204 4.90215 8.84972 3.96447C9.7874 3.02678 11.0592 2.5 12.3853 2.5C13.7113 2.5 14.9831 3.02678 15.9208 3.96447C16.8585 4.90215 17.3853 6.17392 17.3853 7.5V11.5" :stroke="val" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="8.38525" cy="17.5" r="0.5" fill="#191919" stroke="#C7F03D"/>
+        <circle cx="12.3853" cy="17.5" r="0.5" fill="#191919" stroke="#C7F03D"/>
+        <circle cx="16.3853" cy="17.5" r="0.5" fill="#191919" stroke="#C7F03D"/>
+    </svg>
+</template>
